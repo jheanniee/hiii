@@ -1,0 +1,327 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+.home{
+	height: 100vh;
+	width: 100%;
+	background-image: url("Photos/background1.gif");
+	background-size: cover;
+	background-position: center;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.logo{
+	color: white;
+	font-size: 40px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+span{
+	color: #f9004d;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 20px  25px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 23px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: #f9004d;
+	transition: .4s;
+}
+.content1 h1{
+	color: white;
+	margin: 20px 0px 20px;
+	font-size: 65px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.content1 h3{
+	color: white;
+	font-size: 25px;
+	margin-left: 50%;
+	margin-bottom: 20px;
+}
+.content1 h4{
+	color: rgba(253, 0, 106, 0.8);
+	letter-spacing: 2px;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+.content2 h2{
+	color: rgb(255, 0, 119);
+	font-size: 35px;
+	margin-left: 40%;
+}
+.content1{
+	color: white;
+	position: fixed;
+	margin-top: 7%;
+	margin-left:8%;
+}
+.content2{
+	position: unset;
+	margin-top: 27%;
+}
+.social{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 6%;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+.social a img{
+	width: 60px;
+	height: 60px;
+}
+.me{
+	margin-left: 3%;
+	margin-top: -3%;
+	margin-right: 6%;
+	width: 360px;
+	height: 420px;
+	border-radius: 20px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 5%;
+	margin-right: 13%
+}
+.about-text p{
+	color: rgba(19, 17, 19, 0.8);
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 25px;
+	margin-bottom: 30px;
+	text-align: justify;
+}
+.about-text h2{
+	color: rgba(255, 0, 34, 0.8);
+	margin-top: 80px;
+	margin-left: 110px;
+	font-size: 35px;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 200px;
+}
+.box1{
+	display: flex;
+	margin-left: 4.5%;
+}
+.card{
+	height: 185px;
+	width: 300px;
+	background: #f88181;
+	border-radius: 10px;
+	margin: 13px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card1{
+	height: 185px;
+	width: 250px;
+	background: #f88181;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	margin-left: 1%;
+	margin-top: 1.5%;
+}
+.title1 h2{
+	margin-top: 2%;
+	margin-left: 32%;
+	font-size: 36px;
+}
+.title2 h2{
+	margin-top: 3%;
+	margin-left: 40%;
+	font-size: 36px;
+}
+.card img{
+	margin-top: 4%;
+	width: 180x;
+	height: 160px;
+	border-radius: 10px;
+}
+.card1 img{
+	margin-top: 2.5%;
+	width: 200x;
+	height: 170px;
+	border-radius: 10px;
+}
+.content5{
+	margin-top: 3.5%;
+}
+.content5 li img{
+	margin-left: 18%;
+	width: 900px;
+	height: 370px;
+}
+.skill-bars{
+  padding: 25px 30px;
+  width: 600px;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  margin-left: 45%;
+  margin-top: 2.3%;
+}
+.skill-bars .bar{
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+  margin-top: 0px;
+}
+.skill-bars .bar .info{
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #ba52f7;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.c span{
+  width: 80%;
+}
+.bar .progress-line.csharp span{
+  width: 70%;
+}
+.bar .progress-line.cplus span{
+  width: 50%;
+}
+.bar .progress-line.java span{
+  width: 45%;
+}
+.bar .progress-line.python span{
+  width: 40%;
+}
+.bar .progress-line.htmlcss span{
+  width: 60%;
+}
+.bar .progress-line.photo span{
+	width: 45%;
+}
+.bar .progress-line.music span{
+	width: 70%;
+}
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+.progress-line.c span::after{
+  content: "80%";
+}
+.progress-line.csharp span::after{
+  content: "70%";
+}
+.progress-line.cplus span::after{
+  content: "50%";
+}
+.progress-line.java span::after{
+  content: "45%";
+}
+.progress-line.python span::after{
+  content: "40%";
+}
+.progress-line.htmlcss span::after{
+  content: "60%";
+}
+.progress-line.photo span::after{
+	content: "45%";
+  }
+.progress-line.music span::after{
+	content: "70%";
+  }
+.skill img{
+	margin-top: 4%;
+	width: 700px;
+	height: 400px;
+	position:absolute;
+}
